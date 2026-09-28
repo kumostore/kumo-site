@@ -113,9 +113,36 @@
     border-radius: 2px;
   }
 
-  .email {
-    font-variant-ligatures: none;
-    word-break: break-word;
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    margin-top: 0.125rem;
+    padding: 0 1.125rem;
+    border: 1px solid rgba(229, 255, 70, 0.4);
+    border-radius: 6px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .btn:hover,
+  .btn:focus-visible {
+    border-color: var(--accent);
+    background: rgba(229, 255, 70, 0.08);
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .legal {
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    color: #7d7d78;
   }
 </style>
 </head>
@@ -141,9 +168,16 @@
   <section aria-labelledby="contact">
     <h2 id="contact">Contact</h2>
     <p class="item">
-      <span class="email">hello@kumo.studio</span>
+      <a class="btn" href="mailto:hello@kumo.studio?subject=Kumo%20Studio%20enquiry">Contact us</a>
     </p>
   </section>
+
+  <footer>
+    <p class="legal">
+      Kumo Studio Limited<br>
+      Registered in England and Wales &middot; Company No. 08453597
+    </p>
+  </footer>
 </main>
 </body>
 </html>
