@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kumo Studio</title>
+<meta name="description" content="Kumo Studio is an independent digital product and creative studio. We design and build software, digital products and creative technology.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<style>
+  :root {
+    --bg: #0b0b0c;
+    --fg: #f2f2f0;
+    --muted: #8f8f8a;
+    --rule: #222225;
+    --accent: #e5ff46;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+                 Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  main {
+    max-width: 34rem;
+    margin: 0 auto;
+    padding: clamp(3.5rem, 12vh, 8rem) 1.5rem clamp(3rem, 10vh, 6rem);
+    padding-top: calc(clamp(3.5rem, 12vh, 8rem) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(clamp(3rem, 10vh, 6rem) + env(safe-area-inset-bottom, 0px));
+  }
+
+  .logo {
+    display: block;
+    width: 11rem;
+    max-width: 60%;
+    height: auto;
+  }
+
+  h1 {
+    margin: 2.25rem 0 0;
+    font-size: clamp(1.75rem, 6vw, 2.25rem);
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .lede {
+    margin: 0.75rem 0 0;
+    font-size: clamp(1.0625rem, 3.4vw, 1.1875rem);
+    line-height: 1.5;
+    color: var(--fg);
+  }
+
+  .body-copy {
+    margin: 1.25rem 0 0;
+    color: var(--muted);
+    max-width: 30rem;
+  }
+
+  section {
+    margin-top: 3rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  h2 {
+    margin: 0 0 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .item {
+    margin: 0;
+    font-size: 1.0625rem;
+  }
+
+  .item .name {
+    font-weight: 600;
+  }
+
+  .item .detail {
+    color: var(--muted);
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(229, 255, 70, 0.35);
+    padding-bottom: 1px;
+  }
+
+  a:hover,
+  a:focus-visible {
+    border-bottom-color: var(--accent);
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .email {
+    font-variant-ligatures: none;
+    word-break: break-word;
+  }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="kumo_logo_TM.png" width="732" height="164" alt="Kumo Studio">
+
+  <h1>Kumo Studio</h1>
+
+  <p class="lede">Independent digital product and creative studio.</p>
+
+  <p class="body-copy">We design and build software, digital products and
+    creative technology.</p>
+
+  <section aria-labelledby="work">
+    <h2 id="work">Work</h2>
+    <p class="item">
+      <span class="name">Kapture Pro</span><br>
+      <a class="detail" href="https://kaptapp.com">kaptapp.com</a>
+    </p>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">Contact</h2>
+    <p class="item">
+      <span class="email">hello@kumo.studio</span>
+    </p>
+  </section>
+</main>
+</body>
+</html>
