@@ -139,10 +139,29 @@
   }
 
   .legal {
-    margin: 0;
+    margin: 0 0 0.75rem;
     font-size: 0.8125rem;
     line-height: 1.55;
     color: #7d7d78;
+  }
+
+  .legal:last-child {
+    margin-bottom: 0;
+  }
+
+  .legal-name {
+    color: var(--muted);
+  }
+
+  .legal a {
+    color: inherit;
+    border-bottom-color: rgba(242, 242, 240, 0.25);
+  }
+
+  .legal a:hover,
+  .legal a:focus-visible {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
   }
 </style>
 </head>
@@ -174,8 +193,16 @@
 
   <footer>
     <p class="legal">
-      Kumo Studio Limited<br>
+      <span class="legal-name">Kumo Studio Limited</span><br>
       Registered in England and Wales &middot; Company No. 08453597
+    </p>
+    <p class="legal">
+      Registered office: Office 2, Tweed House, Park Lane<br>
+      Swanley, Kent, England, BR8 8DT
+    </p>
+    <p class="legal">
+      Contact: <a href="mailto:hello@kumo.studio?subject=Kumo%20Studio%20enquiry">hello@kumo.studio</a><br>
+      kumo.studio is the official website of Kumo Studio Limited.
     </p>
   </footer>
 </main>
